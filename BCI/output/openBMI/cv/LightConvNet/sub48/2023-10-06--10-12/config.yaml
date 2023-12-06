@@ -1,0 +1,26 @@
+batchSize: 200
+continueAfterEarlyStop: true
+dataPath: /Users/wanger/BCI_Data/DataSet/OpenBMI/multifreq
+kFold: 10
+lr: 0.001
+lrFactor: 0.6
+lrMin: 0.0001
+lrPatience: 20
+maxEpochs: 500
+maxEpochsAfterEarlyStop: 200
+nGPU: 0
+network: LightConvNet
+networkArgs:
+  bias: false
+  embed_dim: 64
+  num_bands: 9
+  num_channels: 20
+  num_classes: 2
+  num_heads: 8
+  num_samples: 1000
+  weight_softmax: true
+  win_len: 250
+numEpochsEarlyStop: 50
+outFolder: output/openBMI
+preferedDevice: gpu
+randomSeed: 0
